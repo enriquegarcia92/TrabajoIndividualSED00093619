@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/AdminHome.css">
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="AdminHome.html">Inicio</a></li>
+        <li><a href="GestorUsuarios.html">Gestor de Usuarios</a></li>
+        <li><a href="GestionVehiculos.html">Gestor de Vehiculos</a></li>
+        <li><a href="GestorVentas.html">Gestor de Ventas</a></li>
+        <li style="float:right"><a class="active" href="login.html">Cerrar sesion</a></li>
+      </ul>
+<h1>Gestion de Usuarios</h1>   
+
+<div>
+    <form action="/action_page.php">
+      <label for="fname">Nombre</label>
+      <input type="text" id="fname" name="firstname" placeholder="Sus nombres">
+      <label for="lname">Apellido</label>
+      <input type="text" id="lname" name="lastname" placeholder="Sus apellidos">
+      <label for="lname">Nombre de usuario</label>
+      <input type="text" id="lname" name="lastname" placeholder="Con el que entrara al sistema">
+      <label for="lname">Contraseña</label>
+      <input type="text" id="lname" name="lastname" placeholder="********************">
+      <label for="lname">Confirmar Contraseña</label>
+      <input type="text" id="lname" name="lastname" placeholder="********************">
+      <label for="lname">Dui</label>
+      <input type="text" id="lname" name="lastname" placeholder="00000000-0">
+      <label for="lname">Cargo empresarial</label>
+      <input type="text" id="lname" name="lastname" placeholder="Su plaza">
+      <label for="country">Rol de sistema</label>
+      <select id="country" name="country">
+        <option value="australia">Vendedor</option>
+        <option value="canada">Administrador</option>
+      </select>
+    
+      <input type="submit" value="Agregar">
+    </form>
+
+    <br>
+    <br>
+
+    <label for="fname">Buscar</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ej:Enrique,Vendedores,Recursos Humanos">   
+  </div>
+<div style="overflow-x: auto;">
+    <table>
+      <tr>
+        <th>ID</th>  
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Nombre de usuario</th>
+        <th>DUI</th>
+        <th>Cargo empresarial</th>
+        <th>Rol de sistema</th>
+        <th>Herramientas</th>
+      </tr>
+      <tr>
+        <th>JEGA01</th>
+        <td>Jose Enrique</td>
+        <td>Garcia Arevalo</td>
+        <td>JEGA</td>
+        <td>06044000-4</td>
+        <td>Vendedor</td>
+        <td>Ventas</td>
+        <td><input type="button" value="Eliminar"><input type="button" value="Editar"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

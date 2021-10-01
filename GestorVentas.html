@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/AdminHome.css">
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="AdminHome.html">Inicio</a></li>
+        <li><a href="GestorUsuarios.html">Gestor de Usuarios</a></li>
+        <li><a href="GestionVehiculos.html">Gestor de Vehiculos</a></li>
+        <li><a href="GestorVentas.html">Gestor de Ventas</a></li>
+        <li style="float:right"><a class="active" href="login.html">Cerrar sesion</a></li>
+      </ul>
+<h1>Realizar de Venta</h1>   
+
+<div>
+    <form action="/action_page.php">
+      <label for="fname">Identificacion del vehiculo</label>
+      <input type="text" id="fname" name="firstname" placeholder="Id del auto">
+      <label for="fname">Identificacion del trabajador</label>
+      <input type="text" id="fname" name="firstname" placeholder="Id del trabajador">
+      <label for="lname">Documento de identidad del comprador</label>
+      <input type="text" id="lname" name="lastname" placeholder="DUI">
+      <label for="lname">Fecha de la compra</label>
+      <input type="text" id="lname" name="lastname" placeholder="Fecha actual">
+      <label for="lname">Valor de la venta	</label>
+      <input type="text" id="lname" name="lastname" placeholder="$$$$$">
+      <label for="country">tipo de pago</label>
+      <select id="country" name="country">
+        <option value="australia">Consumidor final</option>
+        <option value="canada">Credito fiscal</option>
+      </select>
+
+      <label for="country">Metodo de pago</label>
+      <select id="country" name="country">
+        <option value="australia">Financiamiento</option>
+        <option value="canada">Cheque</option>
+        <option value="canada">Tarjeta</option>
+
+      </select>
+    
+    
+      <input type="submit" value="Realizar venta">
+    </form>
+    <br>
+    <br>
+    <h1>Todas las ventas</h1>   
+    <label for="fname">Buscar</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ej:Honda,2009,jeep,cherooke">   
+  </div>
+<div style="overflow-x: auto;">
+    <table>
+      <tr>
+        <th>Identificacion del vehiculo</th>
+        <th>Identificacion del trabajador</th>
+        <th>Documento de identidad del comprador</th>
+        <th>Fecha de la compra</th>
+        <th>Valor de la venta</th>
+        <th>tipo de pago</th>
+        <th>Metodo de pago</th>
+      </tr>
+      <tr>
+        <th>ML42SM</th>  
+        <th>JEGA01</th>  
+        <td>00000000-0</td>
+        <td>01/10/2021</td>
+        <td>6000</td>
+        <td>Consumidor Final</td>
+        <td>Cheque</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

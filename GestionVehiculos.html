@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/AdminHome.css">
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="AdminHome.html">Inicio</a></li>
+        <li><a href="GestorUsuarios.html">Gestor de Usuarios</a></li>
+        <li><a href="GestionVehiculos.html">Gestor de Vehiculos</a></li>
+        <li><a href="GestorVentas.html">Gestor de Ventas</a></li>
+        <li style="float:right"><a class="active" href="login.html">Cerrar sesion</a></li>
+      </ul>
+<h1>Gestion de Vehiculos</h1>   
+
+<div>
+    <form action="/action_page.php">
+      <label for="fname">Marca</label>
+      <input type="text" id="fname" name="firstname" placeholder="Marca del auto">
+  
+      <label for="lname">Modelo</label>
+      <input type="text" id="lname" name="lastname" placeholder="Modelo segun marca">
+      <label for="lname">Año</label>
+      <input type="text" id="lname" name="lastname" placeholder="Año que se introdujo al mercado">
+      <label for="lname">Recorrido(Km)	</label>
+      <input type="text" id="lname" name="lastname" placeholder="Kilometraje del auto">
+      <label for="lname">Motor(Litros)</label>
+      <input type="text" id="lname" name="lastname" placeholder="Tamaño del motor">
+      <label for="lname">Puertas</label>
+      <input type="text" id="lname" name="lastname" placeholder="cantidad de puertas">
+      <label for="lname">Tipo	</label>
+      <input type="text" id="lname" name="lastname" placeholder="Estipo dle vehiculo ej: Sedan, Suv sencillo, 4x4">
+      <label for="country">Transmision</label>
+      <select id="country" name="country">
+        <option value="australia">Automatica</option>
+        <option value="canada">Manual</option>
+      </select>
+      <label for="lname">Precio estimado	</label>
+      <input type="text" id="lname" name="lastname" placeholder="Valor estimado">
+    
+    
+      <input type="submit" value="Agregar">
+    </form>
+    <br>
+    <br>
+
+    <label for="fname">Buscar</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ej:Honda,2009,jeep,cherooke">   
+  </div>
+<div style="overflow-x: auto;">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Año</th>
+        <th>Recorrido(Km)</th>
+        <th>Motor(litros)</th>
+        <th>Puertas</th>
+        <th>Tipo</th>
+        <th>Precio estimado</th> 
+        <th>Transmision</th>
+        <th>Herramientas</th>
+      </tr>
+      <tr>
+        <th>ML42SM</th>  
+        <td>Mitsubishi</td>
+        <td>Lancer</td>
+        <td>2009</td>
+        <td>120,000</td>
+        <td>2.0</td>
+        <td>4</td>
+        <td>Sedan</td>
+        <td>Manual</td>
+        <td>$6000</td>
+        <td><input type="button" value="Eliminar"><input type="button" value="Editar"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style/AdminHome.css">
+
+</head>
+<body>
+
+    <ul>
+        <li><a href="SellerHome.html">Inicio</a></li>
+        <li><a href="BuscarVehiculos.html">Gestor de Vehiculos</a></li>
+        <li><a href="Ventas.html">Gestor de Ventas</a></li>
+        <li style="float:right"><a class="active" href="login.html">Cerrar sesion</a></li>
+      </ul>
+<h1>Buscar Vehiculos</h1>   
+
+<div>
+    <label for="fname">Buscar</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ej:Honda,2009,jeep,cherooke">   
+  </div>
+<div style="overflow-x: auto;">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Año</th>
+        <th>Recorrido(Km)</th>
+        <th>Motor(litros)</th>
+        <th>Puertas</th>
+        <th>Tipo</th>
+        <th>Precio estimado</th> 
+        <th>Transmision</th>
+        <th>Herramientas</th>
+      </tr>
+      <tr>
+        <th>ML42SM</th>  
+        <td>Mitsubishi</td>
+        <td>Lancer</td>
+        <td>2009</td>
+        <td>120,000</td>
+        <td>2.0</td>
+        <td>4</td>
+        <td>Sedan</td>
+        <td>Manual</td>
+        <td>$6000</td>
+        <td><input type="button" value="Eliminar"><input type="button" value="Editar"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
